@@ -5,9 +5,9 @@ const Product = mongoose.model('Product');
 module.exports = {
 	async index(req, res){//Busca produtos cadastrados
 
-		const { page = 1 } = req.query;
-		const products = await Product.paginate({}, { page, limit: 5});
-
+		//const { page = 1 } = req.query;
+		//const products = await Product.paginate({}, { page, limit: 5});
+		const products = await Product.find({});
 		return res.json(products);
 
 	},

@@ -18,4 +18,4 @@ requireDir("./src/models");
 //Rotas
 app.use('/', require('./src/routes'));
 
-app.listen(3000);
+app.listen(4002);
