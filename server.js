@@ -13,6 +13,8 @@ mongoose.connect(
 	'mongodb://localhost:27017/nodeapi', 
 	{useNewUrlParser: true}
 );
+
+
 requireDir("./src/models");
 
 //Rotas
